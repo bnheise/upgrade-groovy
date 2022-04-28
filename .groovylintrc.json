@@ -1,0 +1,20 @@
+{
+    "extends": "recommended",
+    "rules": {
+        "CatchException": {
+            "enabled": false
+        },
+        "CompileStatic": {
+            "enabled": false
+        },
+        "DuplicateNumberLiteral": {
+            "enabled": false
+        },
+        "UnnecessaryDotClass": {
+            "enabled": false
+        },
+        "UnnecessaryGetter": {
+            "enabled": false
+        }
+    }
+}
