@@ -25,8 +25,8 @@ systemProperties = System.getProperties()
 // TODO: Check if search engine method for 6.2 works here
 
 // Groups and Sites
-groups = GroupLocalServiceUtil.getGroups(-1, -1)
-sites = groups.findAll { group -> group.site }
+// groups = GroupLocalServiceUtil.getGroups(-1, -1)
+// sites = groups.findAll { group -> group.site }
 
 // Others
 companiesCount = CompanyLocalServiceUtil.companiesCount
@@ -53,12 +53,12 @@ println 'Database: ' + portalProperties.getProperty('jdbc.default.driverClassNam
 println '\nOS: ' + systemProperties.getProperty('os.name')
 println '\n* App Server: TDB'
 
-println '\nSites:'
-sites.each { site ->
-    println '\t' + site.friendlyURL
-    liveGroup = StagingUtil.getLiveGroup(site.groupId)
-    println '\t\tStaging: ' + liveGroup.staged
-}
+// println '\nSites:'
+// sites.each { site ->
+//     println '\t' + site.friendlyURL
+//     liveGroup = StagingUtil.getLiveGroup(site.groupId)
+//     println '\t\tStaging: ' + liveGroup.staged
+// }
 
 println '\nPersonal Public Pages: ' + portalProperties.getProperty('layout.user.public.layouts.enabled')
 println 'Personal Private Pages: ' + portalProperties.getProperty('layout.user.private.layouts.enabled')
